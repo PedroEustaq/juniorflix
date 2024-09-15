@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    body {
+        align-items: center;
+        flex-flow: column-reverse nowrap;
+    }
+    nav#navL {
+        height: 100px;
+        width: 490px;
+        flex-flow: row wrap;
+    }
+}
