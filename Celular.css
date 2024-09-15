@@ -5,7 +5,10 @@
     }
     nav#navL {
         height: 100px;
-        width: 490px;
-        flex-flow: row wrap;
+        width: 440px;
+        flex-flow: row nowrap;
+    }
+    div#divIMG {
+        scale: 0.8;
     }
 }
