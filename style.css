@@ -6,7 +6,7 @@
 body {
     background-color: black;
     display: flex;
-
+overflow-y: hidden;
     width: 100vw;
     height: 100vh;
     font-family: "Roboto", sans-serif;
@@ -24,6 +24,7 @@ nav#navL {
 main#mainD {
     width: 100vw;
     background-color: rgb(24, 24, 24);
+    overflow-y: scroll;
 }
 div#divIMG {
     display: flex;
@@ -64,7 +65,12 @@ overflow-y: hidden;
 section.Stable::-webkit-scrollbar {
     display: none;
 }
-
+.rodar {
+    overflow-x: scroll;
+}
+.rodar::-webkit-scrollbar {
+    display: none;
+}
 section.Stable > h1 {
     color: white;
     font-weight: 300;
@@ -86,6 +92,7 @@ div#filaDfilm {
     height: 250px;
     display: flex;
     align-items: center;
+    gap: 20px;
     transition: all 0.2s ease;
 }
 div#divFilm >img:hover {
@@ -94,4 +101,16 @@ div#divFilm >img:hover {
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.69);
     cursor: pointer;
     scale: 1.02;
+}
+div#imagemjn {
+    padding: 10px;
+    height: 35px;
+    position: relative;
+    background-color: transparent;
+}
+div#imagemjn > img {
+    position: relative;
+    background-color: transparent;
+    width: 150px;
+    float:right
 }

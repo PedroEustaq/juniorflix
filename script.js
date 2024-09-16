@@ -1,5 +1,5 @@
 
-const sections = document.querySelectorAll('.Stable');
+const sections = document.querySelectorAll('.rodar');
 
 sections.forEach(section => {
     section.addEventListener('wheel', (event) => {

@@ -3,7 +3,7 @@
         height: auto;
         width: 100vw;
         align-items: center;
-        flex-flow: column-reverse nowrap;
+        flex-flow: column nowrap;
         overflow-y: auto;
     }
     main#mainD {
@@ -14,6 +14,7 @@
     nav#navL {
         height: 100px;
         width: 100vw;
+        justify-content: space-between;
         flex-flow: row nowrap;
     }
     div#divIMG {
