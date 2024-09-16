@@ -53,3 +53,45 @@ div#divIMG > img {
 div#divIMG > h6 {
     width: auto;
 }
+
+section.Stable {
+height: 300px;
+padding: 20px;
+background-color: transparent;
+overflow-x:scroll;
+overflow-y: hidden;
+}
+section.Stable::-webkit-scrollbar {
+    display: none;
+}
+
+section.Stable > h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+div#divFilm > img {
+    width: 150px;
+    height: 230px;
+}
+div#filaDfilm {
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+div#filaDfilm {
+    background-color: transparent;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+div#divFilm >img:hover {
+    border: 1px rgba(255, 255, 255, 0.595) solid;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.69);
+    cursor: pointer;
+    scale: 1.02;
+}
