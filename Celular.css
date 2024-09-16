@@ -15,4 +15,7 @@
     div#divIMG {
         scale: 0.8;
     }
+    nav#navL {
+        position: fixed;
+    }
 }
