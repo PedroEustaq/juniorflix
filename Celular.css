@@ -1,21 +1,22 @@
 @media (max-width: 768px) {
     body {
+        height: auto;
+        width: 100vw;
         align-items: center;
         flex-flow: column-reverse nowrap;
         overflow-y: auto;
     }
     main#mainD {
         overflow-y: auto;
+        width: 100vw;
+        height: 550px;
     }
     nav#navL {
         height: 100px;
-        width: 440px;
+        width: 100vw;
         flex-flow: row nowrap;
     }
     div#divIMG {
         scale: 0.8;
-    }
-    nav#navL {
-        position: fixed;
     }
 }
