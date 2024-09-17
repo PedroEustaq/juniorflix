@@ -10,8 +10,11 @@
         overflow-y: auto;
         width: 100vw;
         height: 100vh;
+        padding-top: 90px;
     }
     nav#navL {
+        z-index: 99;
+        position: fixed;
         height: 100px;
         width: 100vw;
         justify-content: space-between;
