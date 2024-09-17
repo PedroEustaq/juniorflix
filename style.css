@@ -134,6 +134,26 @@ div#imagemjn > img {
     width: 150px;
     float:right
 }
+form >img {
+    position: absolute;
+    margin-top: 5px;
+    width: 30px;
+    filter: invert(100%);
+}
+input#caixaPesquisa {
+    background-color: rgba(55, 55, 55, 0.925);
+    color: white;
+    margin-left: 40px;
+    border-radius: 50px;
+    height: 30px;
+    width: 300px;
+    border: 0px;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px black;
+    padding:5px;
+    padding-left: 15px;
+    position: absolute;
+}
 section#exemplo > section {
     display: flex;
     background-color: rgb(18, 18, 18);
