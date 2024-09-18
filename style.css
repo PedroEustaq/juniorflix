@@ -83,7 +83,7 @@ section.Stable {
 height: 300px;
 padding: 20px;
 background-color: transparent;
-overflow-x:scroll;
+overflow-x:hidden;
 overflow-y: hidden;
 }
 section.Stable::-webkit-scrollbar {
@@ -106,6 +106,7 @@ div#divFilm > img {
     height: 230px;
 }
 div#filaDfilm {
+    overflow-x: scroll;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
