@@ -4,21 +4,22 @@
         width: 100vw;
         align-items: center;
         flex-flow: column nowrap;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
     main#mainD {
         overflow-y: auto;
         width: 100vw;
-        height: 100vh;
-        padding-top: 90px;
+        height: 85vh;
+        padding-top: 0px;
     }
     nav#navL {
         z-index: 99;
-        position: fixed;
+        position: relative;
         height: 100px;
         width: 100vw;
         justify-content: space-between;
         flex-flow: row nowrap;
+        display: flex;
     }
     div#divIMG {
         scale: 0.8;
@@ -33,9 +34,5 @@
     }
     div#imagemjn {
         display: none;
-    }
-    nav#navL {
-        display: flex;
-        position: relative;
     }
 }
