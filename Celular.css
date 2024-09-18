@@ -23,4 +23,19 @@
     div#divIMG {
         scale: 0.8;
     }
+    section#exemplo {
+        flex-flow: column nowrap;
+    }
+    div#videoDemo {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    div#imagemjn {
+        display: none;
+    }
+    nav#navL {
+        display: flex;
+        position: relative;
+    }
 }

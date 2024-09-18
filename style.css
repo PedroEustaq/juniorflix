@@ -4,16 +4,18 @@
     box-sizing: 0;}
 
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.948);
     display: flex;
     width: 100vw;
     height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
 nav#navL {
-    display: flex;
+    display: none;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
@@ -40,6 +42,7 @@ h2#btn:hover {
     cursor: pointer;
 }
 main#mainD {
+    margin-top: 0px;
     width: 100vw;
     background-color: rgb(24, 24, 24);
     overflow-y: scroll;
@@ -94,7 +97,7 @@ section.Stable::-webkit-scrollbar {
 }
 section.Stable > h1 {
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -123,68 +126,100 @@ div#divFilm >img:hover {
     scale: 1.02;
 }
 div#imagemjn {
-    padding: 10px;
-    height: 35px;
-    position: relative;
+    z-index: 999;
     background-color: transparent;
+    border: 0px white solid;
+    padding: 5px;
+    height: 50px;
+    gap: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 div#imagemjn > img {
-    position: relative;
-    background-color: transparent;
-    width: 150px;
-    float:right
+width: 150px;
+border: 0px solid white;
 }
-form >img {
-    position: absolute;
-    margin-top: 5px;
-    width: 30px;
-    filter: invert(100%);
+img#topIMG {
+    filter:invert(100%);
+    position: relative;
+    width: 40px;
+    transform: rotateZ(5deg);
+}
+h1#topDia {
+    border-bottom: 1px rgba(255, 255, 255, 0.503) solid;
+    width: 300px;
+    text-shadow: 0px 0px 20px rgb(75, 75, 75);
+}
+div#pequenoIco {
+    border: 0px solid white;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+div#pequenoIco > img {
+width: 30px;
+height: 30px;
+filter: invert(80%);
+}
+div#pequenoIco > img:hover {
+    cursor: pointer;
 }
 input#caixaPesquisa {
     background-color: rgba(55, 55, 55, 0.925);
     color: white;
-    margin-left: 40px;
+    margin-left: 0px;
     border-radius: 50px;
     height: 30px;
     width: 300px;
-    border: 0px;
+    border: 0px solid white;
     font-size: 16px;
     box-shadow: 0px 0px 5px black;
     padding:5px;
     padding-left: 15px;
-    position: absolute;
+    position: relative;
 }
-section#exemplo > section {
-    display: flex;
-    background-color: rgb(18, 18, 18);
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center ;
+section#exemplo > section#part1 {
+    width: 100%;
+    border: 0px solid white;
+}
+div#logoSerFil {
+width: 50%;
 }
 div#logoSerFil > img {
+    padding-left: 20px;
+    padding-top: 20px;
     animation-name:surgir;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    height: 200px;
+    width: 100%;
+    height: 50%;
     border: white 0px solid;
 }
+div#videoDemo {
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    border:  0px solid white;
+    width: 90%;
+}
 div#videoDemo > img {
-    border: 3px solid rgba(90, 90, 90, 0.158);
     box-shadow: -4px 2px 10px 10px #00000055;
     animation-name:surgir;
     animation-duration: 1.5s;
     animation-delay: 0.5s;
     opacity: 0;
+    width: 100%;
     animation-fill-mode: forwards;
 }
 section#exemplo {
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.196);
+    padding-top: 20px;
     display: flex;
     flex-flow: row nowrap;
-    color: white;
-    justify-content: center;
-    align-items: center;
+    border: 0px white solid;
+    background-color: transparent;
 }
 div#resumo {
     animation-name:surgir;
@@ -194,7 +229,7 @@ div#resumo {
     opacity: 0;
     font-weight: 400;
     padding: 20px;
-    height: 120px;
+    color: white;
     line-height: 1.5em;
     font-size: 20px;
     background-color: transparent;
