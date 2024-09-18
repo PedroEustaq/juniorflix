@@ -32,6 +32,9 @@
         align-items: center;
         width: 100%;
     }
+    div#filaDfilm {
+        overflow-x: scroll;
+    }
     div#imagemjn {
         display: none;
     }

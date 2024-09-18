@@ -106,7 +106,7 @@ div#divFilm > img {
     height: 230px;
 }
 div#filaDfilm {
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
