@@ -11,13 +11,10 @@ sections.forEach(section => {
 
 
 
-//remover cache
-const stylesheets = document.querySelectorAll('link[rel="stylesheet"]');
-stylesheets.forEach((sheet) => {
-    sheet.href = `${sheet.href}?v=${new Date().getTime()}`;
-});
 
-const scripts = document.querySelectorAll('script');
-scripts.forEach((script) => {
-    script.src = `${script.src}?v=${new Date().getTime()}`;
+document.getElementById('topsI').addEventListener('click', function() {
+    document.getElementById('topDia').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('homeI').addEventListener('click', function() {
+    document.getElementById('exemplo').scrollIntoView({ behavior: 'smooth' });
 });
